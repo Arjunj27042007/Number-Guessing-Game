@@ -1,0 +1,12 @@
+#This is the code of Number Guessing Game.It is a simple , understandable code
+
+import random
+computer_guess = random.randint(1,100)
+while True:
+    user_guess = int(input("Enter your guess : "))
+    if user_guess == computer_guess :
+        print("Congrats , You cracked it... ")
+    elif user_guess < computer_guess:
+        print("Nop , little bit higher")
+    elif (user_guess > computer_guess ):
+        print("Nop , little bit lower..")
